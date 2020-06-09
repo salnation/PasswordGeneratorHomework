@@ -6,3 +6,8 @@ This can be used for companies that handle large amounts of sensitive data, weak
 
 The user needs a new, secure password 
 The working web application will generate a strong password. 
+
+Included files:
+- index.html
+- password.css
+- password.js
