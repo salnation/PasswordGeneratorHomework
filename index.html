@@ -6,9 +6,45 @@
 
     <title>Unit 03 - Javascript Homework - Password Generator</title>
 
+    <!-- Linking the css to the html page -->
     <link rel="stylesheet" href="password.css">
+
+    <!-- Linking the javascript to the html page -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="password.js"></script>
 
 </head>
 
+<body>
+
+    <main>
+
+      <!-- Heading for the website - generate -->
+      <h1>Generate a password</h1>
+      
+      <!-- Using the <label> tag as well as the for attribute -->
+      <label for="num">Number of characters:</label>
+
+    <!-- This asks the user to to input the number of characters that they would like their password to be -->
+
+    <input type="text" id="num"><br>
+      
+    <!-- Second label on the page is for the password where the end password will populate -->
+
+      <label for="password">Password:</label>
+    <input type="text" id="password" disabled><br>
+      
+    <!-- Third label on the page will contain two buttons -->
+      <label>&nbsp;</label>
+
+      <!-- First button will be labeled 'get password' -->
+      <input type="button" id="generate" value="Get Password">
+
+      <!-- Second button will be labeled 'clear' -->
+      <input type="button" id="clear" value="Clear"><br>
+
+    </main>
+
+  </body>
+
+</html>
