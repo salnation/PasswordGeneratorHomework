@@ -29,4 +29,13 @@ var char = ""
 // calculate the length of the password entered by the user. parselnt parses a string argument and returns an integer.
 var num = parselnt($("#num"));
 
+// time to validate the length with an if / else statement - The isNaN() function determines whether a value is not a number.
+if (isNaN(num)) {
+   alert("Please enter a valid number");
+} else {
+    //loop like like learned last lesson on javascript
+    for (var i = 0; i < num, i++)
+    //SOMETHING HAS TO GO HERE TO GET A RANDOM CHARACTER FOR EACH OF THE CHARACTERS REQUIRED IN THE PASSWORD BY THE USER.
+}
 
+//
