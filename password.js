@@ -26,18 +26,30 @@ var password = "";
 // calculate the length of the password entered by the user. parselnt parses a string argument and returns an integer.
 var num = parselnt($("#num"));
 
-// time to validate the length with an if / else statement - The isNaN() function determines whether a value is not a number.
+// validate the length with an if / else statement - The isNaN() function determines whether a value is not a number.
 if (isNaN(num)) {
    alert("Please enter a valid number");
 } else {
     //loop like like learned last lesson in class
-    for (var i = 0; i < num, i++)
-    //SOMETHING HAS TO GO HERE TO GET A RANDOM CHARACTER FOR EACH OF THE CHARACTERS REQUIRED IN THE PASSWORD BY THE USER.
+    for (var i = 0; i < num, i++) {
     //get a random character from the characters string
-    begin = getRandomNumber();
-    stop = start + 1;
+    begin = getRandomNumber(characters.length);
+    stop = begin + 1;
     //Using the substring() method extracts the characters from a string
-    char = characters.substring();
+    char = characters.substring(begin, stop);
+  }
+
+    // show the password string when the loop is done 
+    $("#password").val(password);
+  }
 }
 
-//
+//ending click
+
+$("#clear").click(function() {
+    //The val() method returns or sets the value attribute of the selected elements
+    $("#num").val( "" );
+    $("#password").val( "" );
+    //The focus() method triggers the focus event, or attaches a function to run when a focus event occurs.
+    $("#num").focus( "" );
+}
