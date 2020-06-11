@@ -22,9 +22,6 @@ document.getElementById(document).ready(function(); {
 //These are all of the possible characters that can be used to generate the passwrd - numbers and letters both upper and lowercase as well as some special characters.
 var characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_-+!@";
 var password = "";
-var begin = getRandomNumber(characters.length);
-var stop = start + 1;
-var char = ""
 
 // calculate the length of the password entered by the user. parselnt parses a string argument and returns an integer.
 var num = parselnt($("#num"));
@@ -33,9 +30,14 @@ var num = parselnt($("#num"));
 if (isNaN(num)) {
    alert("Please enter a valid number");
 } else {
-    //loop like like learned last lesson on javascript
+    //loop like like learned last lesson in class
     for (var i = 0; i < num, i++)
     //SOMETHING HAS TO GO HERE TO GET A RANDOM CHARACTER FOR EACH OF THE CHARACTERS REQUIRED IN THE PASSWORD BY THE USER.
+    //get a random character from the characters string
+    begin = getRandomNumber();
+    stop = start + 1;
+    //Using the substring() method extracts the characters from a string
+    char = characters.substring();
 }
 
 //
