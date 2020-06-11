@@ -17,11 +17,16 @@ document.getElementById(document).ready(function(); {
     random = + 1;
 }
 
-//next variables to be set - characters, password, begin, stop, char, num
+//next variables to be set - characters, password, begin, stop, char, num 
 
-var characters = ""
-var password = ""
-var begin = ""
-var stop = ""
+//These are all of the possible characters that can be used to generate the passwrd - numbers and letters both upper and lowercase as well as some special characters.
+var characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_-+!@";
+var password = "";
+var begin = getRandomNumber(characters.length);
+var stop = start + 1;
 var char = ""
+
+// calculate the length of the password entered by the user. parselnt parses a string argument and returns an integer.
+var num = parselnt($("#num"));
+
 
